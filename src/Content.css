@@ -1,0 +1,13 @@
+#first-forecast {
+  text-align: center;
+}
+footer {
+  color: #000000;
+  line-height: 2;
+  text-align: center;
+  background-color: #ecd18c;
+  position: relative;
+  bottom: 0;
+  font-family: "Amatic SC", cursive;
+  margin-top: 40px;
+}
