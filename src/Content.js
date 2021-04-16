@@ -15,7 +15,7 @@ export default function Content() {
         <footer>
           <em>
             {" "}
-            <a href="https://github.com/gabrieladora/my-weather-app">
+            <a href="https://github.com/gabrieladora/gabi-react-app">
               Open-source code
             </a>{" "}
             by Gabriela-Dora
