@@ -6,7 +6,7 @@ import Content from "./Content";
 
 
 
-function App() {
+ export default function App() {
   return (
   <div className="App" style={{ width: "100rem" }}>
       <Form />
@@ -15,4 +15,4 @@ function App() {
     </div>
   );
   }
-export default App;
+

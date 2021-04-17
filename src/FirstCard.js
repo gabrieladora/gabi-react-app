@@ -23,8 +23,8 @@ export default function FirstCard() {
             <button href="#" id="fahrenheit-link" /> ℉{" "}
           </span>
           <p id="primary-description"></p>
-          <p className="wind-speed" id="wind-speed"></p>
-          <p className="humidity" id="humidity"></p>
+          <p className="wind-speed" id="wind-speed">Wind speed: 2km/h</p>
+          <p className="humidity" id="humidity">Humidity: 20%</p>
           <h6 className="card-subtitle-first">Sunny</h6>
           <p id="note"></p>
           <p id="time">
