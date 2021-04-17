@@ -15,7 +15,7 @@ export default function Content() {
         <footer>
           <em>
             {" "}
-            <a href="https://github.com/gabrieladora/gabi-react-app">
+            <a href="https://github.com/gabrieladora/gabi-react-app" target="_blank" rel="noopener noreferrer">
               Open-source code
             </a>{" "}
             by Gabriela-Dora
