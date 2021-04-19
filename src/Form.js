@@ -14,7 +14,7 @@ export default function Form() {
                   id="input-city"
                   className="city"
                   placeHolder="Los Angeles"
-                  autoFocus="on"
+                   autoFocus="on"
                 />
                 <input
                   type="submit"
