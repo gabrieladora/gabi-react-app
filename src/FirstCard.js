@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import "./FirstCard.css";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function FirstCard() {
   const[ready, setReady]= useState(false);
   const[weather,setWeather]= useState(null);
   
-  
-  function handleResponse(response){
-   console.log(response.data);
+        function handleResponse(response){
+         console.log(response.data);
   
     setWeather({
       temperature: response.data.main.temp ,
       wind : response.data.wind.speed ,
       humidity:response.data.main.humidity , 
       description: response.data.weather[0].description, 
+      date: new Date(response.data.dt * 1000) , 
       city: response.data.name
     } ); 
     
@@ -31,7 +32,7 @@ export default function FirstCard() {
             <em>Los Angeles</em>
           </p>
           <h5 className="card-title" id="card-title-first">
-            Day
+            <FormattedDate date={weather.date} />
           </h5>
           <br />
           <img src="" id="primaryIcon" alt="" />
