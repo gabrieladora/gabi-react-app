@@ -9,8 +9,7 @@ export default function FirstCard() {
   
         function handleResponse(response){
          console.log(response.data);
-  
-    setWeather({
+       setWeather({
       temperature: response.data.main.temp ,
       wind : response.data.wind.speed ,
       humidity:response.data.main.humidity , 
@@ -36,7 +35,9 @@ export default function FirstCard() {
   
   axios.get(url).then(handleResponse)
   return(
+    search()
     "Loading..."
+
   )
   }
  

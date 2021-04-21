@@ -9,7 +9,7 @@ import Content from "./Content";
  export default function App() {
   return (
   <div className="App" style={{ width: "100rem" }}>
-      <Form />
+      <Form  data={weather}/>
       <FirstCard />
       <Content />
     </div>
