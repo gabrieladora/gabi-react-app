@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./FirstCard.css";
 import axios from "axios";
-import FormattedDate from "./FormattedDate";
+import WeatherInformations from "./WeatherInformations";
 
 export default function FirstCard() {
   const[ready, setReady]= useState(false);
@@ -23,36 +23,11 @@ export default function FirstCard() {
   }
   if (ready) {
     return(
-    <div className="FirstCard">
-      <div className="card-first" style={{ width: "30rem" }}>
-        <div className="card-body-first">
-          <p>
-            {" "}
-            <small>Current city:</small>
-            <em>Los Angeles</em>
-          </p>
-          <h5 className="card-title" id="card-title-first">
-            <FormattedDate date={weather.date} />
-          </h5>
-          <br />
-          <img src="" id="primaryIcon" alt="" />
-          <br />
-          <strong id="temperature"> {Math.round(weather.temperature)} </strong>
-          <span className="units">
-            <button href="#" id="celsius-link" className="active" /> ℃ |{" "}
-            <button href="#" id="fahrenheit-link" /> ℉{" "}
-          </span>
-          <p id="primary-description"></p>
-          <p className="wind-speed" id="wind-speed">Wind speed: {Math.round(weather.wind)} km/h</p>
-          <p className="humidity" id="humidity">Humidity: {weather.humidity}%</p>
-          <h6 className="card-subtitle-first">{weather.description} </h6>
-          <p id="note"></p>
-          <p id="time">
-            <small>Last updated at </small>15:00h
-          </p>
-        </div>
-      </div>
-    </div>
+      <div className="WeatherInformations">
+      
+      <WeatherInformations data={weather} />
+      </div>  
+    
     )
   }else{
     let city= "Los Angeles"
