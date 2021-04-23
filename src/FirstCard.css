@@ -1,3 +1,31 @@
+.city {
+  margin: 0 auto;
+}
+.city,
+.search-engine {
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #fff3af;
+  margin: 0 auto;
+  margin: 5px;
+  float: none;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#location-button {
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: #fff3af;
+  border-radius: 2%;
+  transition: all 200ms ease-in-out;
+}
+#location-button:hover {
+  background-color: beige;
+  cursor: pointer;
+}
+
 .cardFirst {
   margin: 0 auto;
   float: none;
