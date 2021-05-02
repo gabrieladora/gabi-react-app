@@ -22,9 +22,9 @@ export default function FirstCard(props) {
 
   function search(){
   const apiKey="4b3a638fb4d48006da8ec9048f3f42e3";
-  let url= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric` ;  
+  let url= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;  
   axios.get(url).then(handleResponse)
-  
+
   }
 
   function handleSubmit(event){
