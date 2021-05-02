@@ -29,7 +29,7 @@ export default function WeatherInformations(props){
           <h6 className="card-subtitle-first">{ props.data.description} </h6>
           <p id="note"></p>
           <p id="time">
-            <small>Last updated at </small> <FormattedDate date={props.data.date}/> 15:00h
+            <small>Last updated at </small> <FormattedDate date={props.data.date}/>
           </p>
     </div>
     </div> 
