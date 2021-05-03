@@ -6,10 +6,10 @@ export default function FormattedDate(props){
     
     let day= days[props.date.getDay()] ;
     let hour=props.date.getHours();
-      if (hour <= 9)
+      if (hour < 10)
          hour=` 0${props.date.getHours()}`
     let minutes=props.date.getMinutes();
-       if(minutes <= 9)
+       if(minutes < 10)
         minutes=`0${props.date.getHours()}` 
     
     
