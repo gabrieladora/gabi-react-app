@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import "./FirstCard.css";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInformations(props){
     return(
@@ -19,11 +20,7 @@ export default function WeatherInformations(props){
           <br />
           <WeatherIcon code={props.data.icon} />
           <br />
-          <strong id="temperature"> {Math.round(props.data.temperature)} </strong>
-          <span className="units">
-            <button href="#" id="celsius-link" className="active" /> ℃ |{" "}
-            <button href="#" id="fahrenheit-link" /> ℉{" "}
-          </span>
+          <WeatherTemperature  celsius={props.data.temperature} />
           <p id="primary-description"></p>
           <p className="wind-speed" id="wind-speed">Wind speed: {Math.round(props.data.wind)} km/h</p>
           <p className="humidity" id="humidity">Humidity: {props.data.humidity}%</p>
