@@ -16,7 +16,9 @@ export default function FirstCard(props) {
       humidity:response.data.main.humidity , 
       description: response.data.weather[0].description, 
       date: new Date(response.data.dt * 1000) , 
-      city: response.data.name
+      city: response.data.name , 
+       icon: response.data.weather[0].icon
+      
     } );  
   }
 
@@ -34,9 +36,6 @@ export default function FirstCard(props) {
   function handleChange(event){
    setCity(event.target.value)
   }
-
-
-  
   if (weather.ready) {
     return(
 <div className="FormAndFirstCard">
