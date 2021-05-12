@@ -18,7 +18,7 @@ export default function WeatherInformations(props){
             <FormattedDate date={props.data.date} />
           </h5>
           <br />
-          <WeatherIcon code={props.data.icon} />
+          <WeatherIcon code={props.data.icon} size={78} />
           <br />
           <WeatherTemperature  celsius={props.data.temperature} />
           <p id="primary-description"></p>

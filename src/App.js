@@ -1,8 +1,7 @@
 
 import './App.css';
-
 import FirstCard from "./FirstCard";
-import Content from "./Content";
+import WeatherForecast from './WeatherForecast';
 
 
 
@@ -10,7 +9,7 @@ import Content from "./Content";
   return (
   <div className="App" style={{ width: "100rem" }}>
       <FirstCard defaultCity="Los Angeles" />
-      <Content />
+      <WeatherForecast />
     </div>
   );
   }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./FirstCard.css";
 import axios from "axios";
 import WeatherInformations from "./WeatherInformations";
+import WeatherForecast from "./WeatherForecast";
 
 export default function FirstCard(props) {
   const[weather,setWeather]= useState({ ready: false });
@@ -19,16 +20,13 @@ export default function FirstCard(props) {
       city: response.data.name , 
        icon: response.data.weather[0].icon
       
-    } );  
-  }
-
+    } );  }
   function search(){
   const apiKey="4b3a638fb4d48006da8ec9048f3f42e3";
   let url= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;  
   axios.get(url).then(handleResponse)
 
   }
-
   function handleSubmit(event){
     event.preventDefault();
     search();
@@ -39,7 +37,6 @@ export default function FirstCard(props) {
   if (weather.ready) {
     return(
 <div className="FormAndFirstCard">
-
    <div className="Form">
       <div className="card-body">
         <div className="content">
@@ -68,12 +65,11 @@ export default function FirstCard(props) {
     </div>
  <div className="WeatherInformations">
           <WeatherInformations data={weather} />
+          <WeatherForecast />
       </div> 
 </div>
  )
   }else{
     search();
     return "Data is loading..."
-  }
- 
-}
+  }}
